@@ -1,14 +1,14 @@
 # DATAPROJECT-MACHINE-LEARNING
 # Regresión y Clasificación de Estudiantes
 
-### 🎯 Objetivo del proyecto
+### Objetivo del proyecto
 El objetivo de este proyecto es analizar un conjunto de datos de estudiantes (`dataset_estudiantes.csv`) para **predecir el rendimiento académico** mediante técnicas de Machine Learning.
 
 Se plantean dos objetivos principales:
 1. **Regresión:** predecir la `nota_final` (valor entre 0 y 100).  
 2. **Clasificación:** predecir si el alumno **aprueba o no** (`aprobado` = 1 si la nota ≥ 60).
 
-## 📊 Contenido del proyecto
+## Contenido del proyecto
 
 | Notebook | Descripción |
 |-----------|-------------|
@@ -17,7 +17,7 @@ Se plantean dos objetivos principales:
 | `03_Modelado.ipynb` | Modelado de regresión y clasificación. Entrenamiento, evaluación y comparación de modelos. |
 | `04_Conclusiones.ipynb` | Conclusión general del proyecto y propuestas de mejora. |
 
-## 🧹 Preprocesamiento de datos
+## Preprocesamiento de datos
 
 - Imputación de valores nulos:
   - **Mediana** para variables numéricas.
@@ -27,7 +27,7 @@ Se plantean dos objetivos principales:
 
 ## 📈 Modelado
 
-### 🔹 Regresión (variable: `nota_final`)
+### Regresión (variable: `nota_final`)
 - **Regresión Lineal**
   - MAE ≈ 5.8  
   - RMSE ≈ 7.2  
@@ -38,7 +38,7 @@ Se plantean dos objetivos principales:
   - Tras regularizar (`max_depth=4`), obtiene R2 ≈ 0.24.  
   - Permite interpretar las variables más influyentes, aunque no mejora la precisión.
 
-### 🔹 Clasificación (variable: `aprobado`)
+### Clasificación (variable: `aprobado`)
 - **Regresión Logística**
   - Accuracy ≈ 0.91  
   - Precision ≈ 0.91  
@@ -51,7 +51,7 @@ Se plantean dos objetivos principales:
   - Con `max_depth=4`, consigue métricas parecidas a la logística (ROC-AUC ≈ 0.95).  
   - Útil para conocer las variables con mayor peso en el aprobado.
 
-## 🧠 Conclusiones generales
+## Conclusiones generales
 
 - La **Regresión Lineal** es el mejor modelo para predecir la nota final (regresión).  
 - La **Regresión Logística** es el modelo más estable y preciso para predecir el aprobado (clasificación).  
@@ -60,9 +60,9 @@ Se plantean dos objetivos principales:
   - `tasa_asistencia`
   - `horas_estudio_semanal`
 
-📌 En resumen, los modelos lineales se adaptan mejor al comportamiento de este dataset.
+En resumen, los modelos lineales se adaptan mejor al comportamiento de este dataset.
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 - **Python 3.12**  
 - **pandas**, **numpy**, **matplotlib**, **seaborn**, **scikit-learn**
 
